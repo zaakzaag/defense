@@ -26,7 +26,7 @@ export default function Home() {
             </button>
             <select
               onChange={changeQuestion}
-              className="basis-1/2 md:max-w-[50%] bg-blue-200 px-4 py-2 rounded">
+              className="basis-1/2 md:max-w-[50%] overflow-hidden bg-blue-200 px-4 py-2 rounded">
               {questions.map((question, index) => (
                 <option key={index} value={index}>
                   {question.question}
