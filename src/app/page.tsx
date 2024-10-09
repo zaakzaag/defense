@@ -10,7 +10,7 @@ export default function Home() {
     setQuestionIndex(randIndex);
   };
 
-  const changeQuestion = (e) => {
+  const changeQuestion = (e:React.ChangeEvent<HTMLSelectElement>) => {
     setQuestionIndex(Number.parseInt(e.target.value));
   };
 
